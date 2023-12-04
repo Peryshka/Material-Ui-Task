@@ -1,0 +1,65 @@
+.container {
+  .cardFirst {
+    height: 50px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+  }
+  .card {
+    display: flex;
+    padding: 5px 10px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100px;
+    width: 100%;
+    margin-top: 40px;
+    .flag{
+      height: 25px;
+      width: 20px;
+    }
+    .avatar {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.mainWrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+  .btn {
+    background-color: black;
+    font-size: 14px;
+    .text {
+      font-size: 14px;
+    }
+  }
+}
+
+.appbarWrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .appbar{
+    display: flex;
+    margin-top: 40px;
+    width: 80%;
+   .toolbar{
+     display: flex;
+     justify-content: space-between;
+     .searchWrap {
+       border: 1px solid lightgrey;
+     }
+     .menuIcon {
+       width: 20px;
+       height: 20px;
+     }
+   }
+  }
+}
