@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Material-Ui-Task/static/css/main.c409da34.css",
+    "main.js": "/Material-Ui-Task/static/js/main.17777e75.js",
+    "index.html": "/Material-Ui-Task/index.html",
+    "main.c409da34.css.map": "/Material-Ui-Task/static/css/main.c409da34.css.map",
+    "main.17777e75.js.map": "/Material-Ui-Task/static/js/main.17777e75.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c409da34.css",
+    "static/js/main.17777e75.js"
+  ]
+}
