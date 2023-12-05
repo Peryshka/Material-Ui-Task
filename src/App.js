@@ -20,6 +20,7 @@ import InputBase from '@mui/material/InputBase';
 import MenuIcon from './assets/img/sort.png';
 import Button from '@mui/material/Button';
 import AddIcon from '@mui/icons-material/Add';
+import Table from './components/table/index';
 
 const Item = styled(Paper)(({theme}) => ({
   background: '#EBEDEF',
@@ -139,6 +140,9 @@ function App() {
                 </IconButton>
               </Toolbar>
             </AppBar>
+          </Box>
+          <Box className={styles.tableWrap}>
+            <Table />
           </Box>
         </Box>
         {/* The end of AppBar code*/}
