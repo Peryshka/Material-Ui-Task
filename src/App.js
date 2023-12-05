@@ -18,7 +18,6 @@ function App() {
             <Table />
           </Box>
         </Box>
-        {/* The end of AppBar code*/}
       </Container>
     </div>
   );
