@@ -1,7 +1,7 @@
 import React from 'react';
 import {DataGrid, GridColDef} from '@mui/x-data-grid';
 import Avatar from "@mui/material/Avatar";
-import {man} from '../../assets/img/man.png';
+import styles from './styles.module.scss';
 
 const columns: GridColDef[] = [
     {
@@ -32,7 +32,7 @@ const columns: GridColDef[] = [
       type:
         'number',
       width:
-        130,
+        170,
     }
     ,
     {
@@ -45,6 +45,7 @@ const columns: GridColDef[] = [
         false,
       width:
         160,
+      className: styles.status,
     }
     ,
   ]
@@ -124,7 +125,7 @@ const Table = () => {
             paginationModel: {page: 0, pageSize: 5},
           },
         }}
-        pageSizeOptions={[5, 10]}
+        pageSizeOptions={[0,5]}
         checkboxSelection
       />
     </div>
