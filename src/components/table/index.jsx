@@ -1,12 +1,10 @@
 import React from 'react';
 import {DataGrid, GridColDef} from '@mui/x-data-grid';
 import Avatar from "@mui/material/Avatar";
-import styles from './styles.module.scss';
 
 const columns: GridColDef[] = [
     {
       field: 'name', headerName: 'Name', width: 200, renderCell: (params) => {
-        console.log(params);
         return (
           <>
             <Avatar src={params.value.avatar}/>
@@ -29,6 +27,7 @@ const columns: GridColDef[] = [
       field: 'verified',
       headerName:
         'Verified',
+      textAlign:'center',
       type:
         'number',
       width:
@@ -45,7 +44,6 @@ const columns: GridColDef[] = [
         false,
       width:
         160,
-      className: styles.status,
     }
     ,
   ]
@@ -115,22 +113,24 @@ const rows = [
 ];
 
 const Table = () => {
-  return (
-    <div style={{height: 400, width: '100%'}}>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        initialState={{
-          pagination: {
-            paginationModel: {page: 0, pageSize: 5},
-          },
-        }}
-        pageSizeOptions={[0,5]}
-        checkboxSelection
-      />
-    </div>
-  )
-}
+    return (
+      <div style={{height: 400, width: '100%'}}>
+        <DataGrid
+          rows={rows}
+          columns={columns}
+          initialState={{
+            pagination: {
+              paginationModel: {page: 0, pageSize: 5},
+            },
+          }}
+          pageSizeOptions={[0, 5]}
+          checkboxSelection
+        />
+      </div>
+    )
+  };
 
 export default Table;
+
+
 
